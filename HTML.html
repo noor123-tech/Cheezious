@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/1706018765.js" crossorigin="anonymous"></script>
+    <title>Cheezious</title>
+    <link rel="icon" href="cheez.png" type="image/png">
+
+</head>
+<body>
+    <main>
+        <div id="navContain">
+            <div id="contain2">
+                   <div id="left">
+                      <span id="location-icon"><i class="fa-solid fa-location-dot fa-2xl"></i></span>
+                      <span id="location-text">Deliver to<br>Canal Bank, Lahore</span>
+    
+                   </div>
+                   <div id="mid">
+                        <img src="./cheez.png">
+                   </div>
+                 
+                <div id="right">
+                    <div class="bar"></div>
+                    <a href="#" class="icon" onclick="searchbar()"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    <div class="bar"></div>
+                    <a href="#user" class="icon" onclick="user()"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+                    <div class="bar"></div>
+                    <a href="#" class="icon" onclick="cart()"> 
+                        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#drop" id="drop-down" onclick="cart()"><i class="fa-solid fa-caret-down"></i></a>
+                </div>
+                
+                </div>
+        </div>
+    </main>
+
+    <!-- search Input  -->
+    <div id="transparent-div">
+        <div id="contain">
+                <div id="search-div">
+        
+                 
+        
+                        <div id="search-text">
+        
+                            <b>Search</b>
+        
+                        </div>
+                        <div id="close">
+        
+                            <a href="#" onclick="cancel()"><i class="fa-solid fa-rectangle-xmark fa-2xl"></i></a>
+        
+                        </div>
+        </div>
+                 
+                    <div id="in">
+                        <input type="text" placeholder="Search products here">
+                    </div>
+                    <div id="line">Search with product name to get better results</div>
+                </div>
+            
+            </div>
+
+<!-- code part for shopping -->
+<div id="container22">
+    <a href="#" onclick="cancelcart()"></a>
+    <div id="container11">
+    <div id="head1">
+    <div id="ss">
+    Your cart
+    </div>
+</div>
+<!-- cart operations -->
+<div id="shadow-lines-shop" style="display: none;">
+    <div id="cart-back-image">
+   <img id="target-img">
+    </div>
+
+<div id="cart-data">
+    <div id="cart-name">Noor ul hassan
+    </div>
+    <div id="cart-text">
+       dsaadasdasdsaddsadsadsadasdsadsadadadsadasdsdsadsdsadsadasdsad
+    </div>
+    <div id="cart-price">
+    677
+    </div>
+    <div id="cart-controls">
+        <button id="increase" onclick="decre()"><i class="fa-solid fa-minus fa-sm" style="color: #ffffff;"></i></button>
+        <span id="valueless">1</span>
+        <button id="decrease" onclick="incre()"><i class="fa-solid fa-plus fa-sm" style="color: #ffffff;"></i></button>
+      <a href="#" onclick="trash()"> <i class="fa-solid fa-trash fa-lg"></i></a> 
+    </div>
+</div>
+
+ 
+</div>
+
+<!-- secnd part oopeartions starting from here -->
+<div class="summary-container" style="display: none;">
+    <div class="summary">
+        <div id="subtotal-container">
+            <span style="color:black">Subtotal</span>
+            <span id="subtotal-amount" style="color: #838f9b;">Rs. 990.00</span>
+        </div>
+        <div id="delivery-charges-container">
+            <span style="color:black">Delivery Charges</span>
+            <span id="delivery-charges-amount" style="color: #838f9b;">Rs. 10.00</span>
+        </div>
+        <div id="grand-total-container">
+            <span id="grand-total-label" style="color:black"><strong><b>Grand total</b></strong></span>
+            <span id="grand-total-amount" style="color: #838f9b;"><strong>Rs. 1000.00</strong></span>
+        </div>
+        <div class="checkout">Checkout</div>
+    </div>
+</div>
+<!-- hhhjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- cart operations end here -->
+    <div id="center">
+    <div id="img1">
+        <img src="./fork.svg">
+    </div>
+</div>
+    <div id="empty">
+        Your cart is empty
+    </div>
+  
+    </div>
+    </div>
+    
+    </div>
+    <!-- slider part starting from here -->
+    <div id="slider-container">
+        <a href="#" onclick="leftclick()"> 
+            <div id="left-container">
+                <div id="left-click">
+                    <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                </div>
+            </div>
+        </a>
+      
+       
+    <div id="slider">
+        <div id="slider-pic1">
+            <img src="pic1.jpg" alt="cheezious" title="Cheezious">
+        </div>
+        <div id="slider-pic2" style="display: none;">
+            <img src="pic2.jpg" alt="cheezious" title="Cheezious">
+        </div>
+        <div id="slider-pic3" style="display: none;" title="Cheezious">
+            <img src="pic3.jpg" alt="cheezious">
+        </div>
+    </div>
+
+        <a href="#" onclick="rightclick()">
+            <div id="right-container">
+                <div id="right-click">
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+   
+<!-- slider part ending here -->
+ <!-- second slider starts from here -->
+  <!-- <div id="category-body">
+    <a href="#" onclick=" rightclick2()">
+        <div id="right-container2">
+            <div id="right-click2">
+                <i class="fa-solid fa-chevron-left fa-sm"></i>
+            </div>
+        </div>
+    </a>
+ <div class="category-container">
+   
+        <div id="back-btn"><a href="#" class="btn">I'M Back</a></div>
+        <div id="starters-btn"><a href="#" class="btn">Starters</a></div>
+        <div id="local-btn"><a href="#" class="btn">Somewhat Local</a></div>
+        <div id="first-part" ><a href="#" class="btn">Somewhat Sooper</a></div>
+        <div id="second-part"> <a href="#" class="btn">Cheezy Treats</a></div>
+        <div id="pizza-deals-btn"><a href="#" class="btn">Pizza Deals</a></div>
+        <div id="sandwiches-btn"><a href="#" class="btn">Sandwiches & Platters</a></div>
+        <div id="special-pizza-btn"><a href="#" class="btn">Special Pizza</a></div>
+        <div id="amazing-btn"><a href="#" class="btn">Somewhat Amazing</a></div>
+        <div id="pastas-btn"><a href="#" class="btn">Pastas</a></div>
+        <div id="burgerz-btn"><a href="#" class="btn">Burgerz</a></div>
+        <div id="side-orders-btn"><a href="#" class="btn">Side Orders</a></div>
+        <div id="addons-btn"><a href="#" class="btn">Addons</a></div>
+  </div>
+  <a href="#" onclick="leftclick2()">
+    <div id="left-container2">
+        <div id="left-click2">
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
+        </div>
+    </div>
+</a>
+</div> -->
+
+<div id="name">
+    <div id="first-portion1" >
+           
+        <div><a href="#back" class="btn">I'm Back!</a></div>
+        <div><a href="#starters" class="btn">Starters</a></div>
+        <div><a href="#" class="btn">Somewhat Local</a></div>
+        <div><a href="#" class="btn">Somewhat Sooper</a></div>
+        <div><a href="#" class="btn">Cheezy Treats</a></div>
+        <div><a href="#" class="btn">Pizza Deals</a></div>
+        <div><a href="#" class="btn">Sandwiches & Platters</a></div>
+    </div>
+    <div id="second-portion1">
+        <div><a href="#" class="btn">Special Pizza</a></div>
+        <div><a href="#" class="btn">Somewhat Amazing</a></div>
+        <div><a href="#" class="btn">Pastas</a></div>
+        <div><a href="#" class="btn">Burgerz</a></div>
+        <div><a href="#" class="btn">Side Orders</a></div>
+        <div><a href="#" class="btn">Addons</a></div>
+    </div>
+</div>
+
+
+  <!--  ends here for  -->
+    <!-- IM BACK CARD HERE -->
+   
+
+    <div id="shadow-lines1"></div>
+     <div id="im-back"><a name="back">I'm Back!</a></div>
+     
+     <div id="back-body">
+        <a href="#" style="text-decoration: none;" >
+<div id="back-container">
+   
+    <div id="back-image">
+          <img src="pasta.jpg">
+          <div id="heart">
+            <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+        </div>
+    </div>
+    <div id="back-name">
+     Fettuccine Alfredo Pasta  
+    </div>
+    <div id="back-para">
+        Pasta Made In Yummiest White Sauce<br> With Chicken Chunks Topped With...
+    </div>
+    <div id="back-price">
+        Rs. 990.00
+    </div>
+    <div id="back-btn" style="display: none;">
+        <div id="back-minus"><a href="#"><i class="fa-solid fa-minus"></i></a></div>
+        <span id="quantity">1</span>
+        <div id="back-plus"><a href="#"><i class="fa-solid fa-plus"></i></a></div>
+    </div>
+     
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+</a>
+</div>
+</a>
+</div>
+
+
+    <!-- IM BACK card ends here -->
+
+
+    <!-- STARTER STARTING FROM HERE  -->
+<div id="shadow-lines"></div>
+    <div id="starters"><a name="starters">Starters</a></div>
+    <div id="starter-container">
+    <a href="#" style="text-decoration: none;">
+<div id="back-container">
+  
+   <div id="back-image">
+         <img id="sourceImage"  src="pic4.jpg">
+         <div id="heart">
+           <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+       </div>
+   </div>
+   <div id="back-name">
+    Cheezy Sticks
+   </div>
+   <div id="back-para">
+    Freshly Baked Bread Filled With The Yummiest Cheese Blend To Satisfy...
+   </div>
+   <div id="back-price">
+    Rs. 590.00
+   </div>
+   <div id="back-btn" style="display: none;">
+     <div id="back-minus">
+        <a href="#" onclick="minus(this)" >
+             <i class="fa-solid fa-minus"></i>
+        </a>
+    </div>
+
+
+
+
+
+       <span id="quantity">1</span>
+       <div id="back-plus">
+        <a href="#" onclick="plus(this)">
+            <i class="fa-solid fa-plus"></i>
+        </a>
+    </div>
+   </div>
+        
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+</a>
+</div>
+
+<!-- SECOND ONE -->
+<a href="#" style="text-decoration: none;" >
+    <div id="back-container">
+      
+       <div id="back-image">
+             <img id="sourceImage"  src="pic5.jpg">
+             <div id="heart">
+               <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+           </div>
+       </div>
+       <div id="back-name">
+        Oven Baked Wings
+       </div>
+       <div id="back-para">
+        Fresh Oven Baked Wings Served With Dip Sauce
+       </div>
+       <div id="back-price">
+        from Rs. 550.00
+       </div>
+       <div id="back-btn" style="display: none;">
+           <div id="back-minus"><a href="#" onclick="minus(this)"><i class="fa-solid fa-minus"></i></a></div>
+           <span id="quantity">1</span>
+           <div id="back-plus"><a href="#" onclick="plus(this)"><i class="fa-solid fa-plus"></i></a></div>
+       </div>
+            
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+    </a>
+    </div>
+    <!-- THIRD ONE -->
+
+    <a href="#" style="text-decoration: none;" >
+        <div id="back-container">
+          
+           <div id="back-image">
+                 <img id="sourceImage"  src="pic6.png">
+                 <div id="heart">
+                   <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+               </div>
+           </div>
+           <div id="back-name">
+            Flaming Wings
+           </div>
+           <div id="back-para">
+            Fresh Oven Baked Wings Tossed In Hot Peri Peri Sauce And Served With Dip...
+           </div>
+           <div id="back-price">
+            from Rs. 600.00
+           </div>
+           <div id="back-btn" style="display: none;">
+               <div id="back-minus"><a href="#" minus(this)><i class="fa-solid fa-minus"></i></a></div>
+               <span id="quantity">1</span>
+               <div id="back-plus"><a href="#" plus(this)><i class="fa-solid fa-plus"></i></a></div>
+           </div>
+                
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+        </a>
+        </div>
+        <!-- FOURTH ONE STARTING FROM HERE -->
+        <a href="#" style="text-decoration: none;" >
+            <div id="back-container">
+              
+               <div id="back-image">
+                     <img id="sourceImage"  src="pic7.jpg">
+                     <div id="heart">
+                       <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+                   </div>
+               </div>
+               <div id="back-name">
+                Calzone Chunks
+               </div>
+               <div id="back-para">
+                4 Pcs Stuffed Calzone Chunks Served with Sauce & Fries
+               </div>
+               <div id="back-price">
+                Rs. 1,050.00
+               </div>
+               <div id="back-btn" style="display: none;">
+                   <div id="back-minus"><a href="#" onclick="minus(this)"><i class="fa-solid fa-minus"></i></a></div>
+                   <span id="quantity">1</span>
+                   <div id="back-plus"><a href="#" onclick="plus(this)"><i class="fa-solid fa-plus"></i></a></div>
+               </div> 
+            
+                 
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+            </a>
+            </div>
+            <!-- 5 one is starting from here -->
+             
+        </div>
+        <div id="second-container">
+            <a href="#" style="text-decoration: none;" >
+                <div id="back-container">
+                  
+                   <div id="back-image">
+                         <img id="sourceImage"  src="pic8.png">
+                         <div id="heart">
+                           <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+                       </div>
+                   </div>
+                   <div id="back-name">
+                    Arabic Rolls
+                   </div>
+                   <div id="back-para">
+                    4 Pcs Arabic Rolls Stuffed with Yummiest Mix Served with Sauce
+                   </div>
+                   <div id="back-price">
+                    Rs. 650.00
+                   </div>
+                   <div id="back-btn" style="display: none;">
+                       <div id="back-minus"><a href="#" onclick="minus()" ><i class="fa-solid fa-minus"></i></a></div>
+                       <span id="quantity">1</span>
+                       <div id="back-plus"><a href="#" onclick="plus()"><i class="fa-solid fa-plus"></i></a></div>
+                   </div>
+                            
+                 <button id="addtocart" onclick="additem(this)">
+                       Add to Cart
+                </button>
+                </a>
+          </div>
+
+           
+                <a href="#" style="text-decoration: none;" >
+                    <div id="back-container">
+                      
+                       <div id="back-image">
+                             <img id="sourceImage" src="pic9.png">
+                             <div id="heart">
+                               <div id="heart-icon"><i class="fa-regular fa-heart fa-xl"></i></div>
+                           </div>
+                       </div>
+                       <div id="back-name">
+                        Behari Rolls
+                       </div>
+                       <div id="back-para">
+                        4 Pcs Behari Rolls Stuffed with Yummiest Mix Served with Sauce
+                       </div>
+                       <div id="back-price">
+                        Rs. 650.00
+                       </div>
+                       <div id="back-btn" style="display: none;">
+                           <div id="back-minus"><a href="#" onclick="minus(this)"><i class="fa-solid fa-minus"></i></a></div>
+                           <span id="quantity">1</span>
+                           <div id="back-plus"><a href="#" onclick="plus(this)"><i class="fa-solid fa-plus"></i></a></div>
+                       </div>
+                            
+  <button id="addtocart" onclick="additem(this)">
+    Add to Cart
+  </button>
+                    </a>
+                    </div>
+               
+        </div>
+  
+        <div id="shadow-lines"></div>
+    
+    <!-- STARTER ENDING FROM HERE -->
+</body>
+</html>
